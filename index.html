@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="navicon">
+            
+            <a href="index.html"><img src="w.png" alt=""></a>
+        </div>
+        
+        <div id="searchbar">
+            <input type="text" placeholder="Enter the city name" value="bangalore">
+            <button>
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </button>
+        </div>
+        <button class="headbtn"><a href="#heading">Detailed info </a></button>
+       
+        <button class="navicon">
+            <i class="fa-solid fa-circle-info fa-xl"></i>
+        </button>
+    </nav>
+    <div class="outercontainer">
+        <div>
+            <h1> Weather
+
+            </h1>
+        </div>
+        <div>
+            <div class="container">
+                <div class="card" >
+                    <img src="clouds.png" alt="" id="imgr">
+                    <p>clouds: <span id="cloud">50</span>%</p>
+                    
+                </div>
+                <div class="card temp" >
+                    <img src="thermometer.png" alt="">
+                    <span id="deg">33</span>°c
+                </div>
+                <div class="card card2">
+                    <img src="humidity.png" alt="">
+                    <p class="num" >
+                        <span id="hum"></span>%
+                    </p>
+                    <P class="x">Humidity</P>
+                </div>
+                <div class="card card2">
+                    <img src="wind.png" alt="">
+                    <p class="num" > 
+                        <span id="wd"></span>
+                         km/h</p>
+                    <P class="x">Wind</P>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 id="name">Delhi</h1>
+        </div>
+    </div>
+    <div id="heading">
+        Detailed info
+    </div>
+    <div class="containernew">
+        
+        <div class="cardnew"><p>  Temp</p><span id="tmp">0</span></div>
+        <div class="cardnew"><p> Clouds</p><span id="cds">0</span></div>
+        <div class="cardnew"><p> Feels like</p><span id="fl">0</span></div>
+        <div class="cardnew"><p> Humidity</p><span id="humi">0</span></div>
+        <div class="cardnew"><p> Max Temp</p><span id="mxtemp">0</span></div>
+        <div class="cardnew"><p> Min Temp</p><span  id="mntemp">0</span></div>
+       
+        <div class="cardnew"><p> Wind Degree </p><span id="wid">0</span></div>
+        <div class="cardnew"><p> Wind Speed </p><span id="ws">0</span></div>
+        <div class="upper">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-up fa-lg"></i>
+            </a>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
